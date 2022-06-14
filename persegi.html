@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>PERSEGI</title>
+<style>
+     input.btn
+      {
+        color: black;
+        background: rgb(255, 255, 255);
+          border: 1px outset orange;
+            font-family: "calibri", Times, serif;
+            font-size: 14px;
+            font-weight: bold;
+            width : auto;
+            }
+</style>
+</head>
+<body>
+<center><br></br><br></br><br></br>
+<b><font color="black" size="5">
+<p>PERSEGI</p>
+<form id="Formulir" name="formulir" method="post" action="">
+                <table width="500" border="0">
+                <tr>
+                <td width="178"><b><font color="black" size="5">Masukan sisi</td>
+                <td><input name="sisi" type="text" id="sisi"></td>
+                </tr>
+                <tr>
+                <td><b><font color="black" size="5">Hasil Penghitungan Luas</td>
+                <td><input name="luas" type="text" id="luas"></td>
+                </tr>
+                <tr>
+                <td><b><font color="black" size="5">Hasil Penghitungan Keliling</td>
+                <td><input name="keliling" type="text" id="keliling"></td>
+                </tr>
+</table>
+<p>
+<input name="cari" type="button" id="cari" value="hitung" class="btn"
+onclick="cariluas()"/>
+</p>
+</form>
+<p>&nbsp;</p>
+
+<script laguage="javascript">
+
+function cariluas()
+{
+sisi=formulir.sisi.value;
+sisi=formulir.sisi.value;
+formulir.keliling.value=4*sisi;
+formulir.luas.value=sisi*sisi;
+}
+
+</script>
+</body>
+</html>
